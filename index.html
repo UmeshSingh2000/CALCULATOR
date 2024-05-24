@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="input" readonly>
+        <div class="number">
+            <div class="row">
+                <button onclick="handleClick('1/x')">1/x</button>
+                <button onclick="handleClick('xsqr')">x<sup>2</sup></button>
+                <button onclick="handleClick('xsqrt')">&radic;x</button>
+                <button onclick="handleClick('!')">!</button>
+            </div>
+            <div class="row">
+                <button onclick="handleClick(7)">7</button>
+                <button onclick="handleClick(8)">8</button>
+                <button onclick="handleClick(9)">9</button>
+                <button onclick="handleClick('*')">x</button>
+            </div>
+            <div class="row">
+                <button onclick="handleClick(4)">4</button>
+                <button onclick="handleClick(5)">5</button>
+                <button onclick="handleClick(6)">6</button>
+                <button onclick="handleClick('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="handleClick(1)">1</button>
+                <button onclick="handleClick(2)">2</button>
+                <button onclick="handleClick(3)">3</button>
+                <button onclick="handleClick('+')">+</button>
+            </div>
+            <div class="row">
+                <button onclick="handleClick(0)">0</button>
+                <button onclick="handleClick('00')">00</button>
+                <button onclick="handleClick('.')">.</button>
+            </div>
+            <div class="row">
+                <button onclick="handleClick('/')">/</button>
+                <button onclick="handleClick('c')">C</button>
+                <button onclick="handleClick('>')">></button>
+                <button onclick="handleClick('=')" id="equals">=</button>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
